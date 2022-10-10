@@ -1,0 +1,41 @@
+code to print a polynomial
+
+
+#include <stdio.h>
+void main()
+    {
+        int a[20];
+        int b,i=0,j=0;
+        printf("enter the number of maximam degree");
+        scanf("%d",&b);
+        for (i=b;i>0;i--)
+        {
+            printf("enter the element");
+            scanf("%d",&a[i]);
+        
+        }
+        for(j=b;j>0;j--)
+        {
+            if(j!=1)
+            {
+                if(a[j]==0)
+                {
+                    continue;
+                }
+                else{
+                        printf("%dx^%d\t+\t",a[j],j);
+                    
+                }
+            }
+            else
+            {
+                if(a[j]==0){
+                    printf("0");
+                }
+                else{
+                
+                printf("%d",a[j]);
+                }
+            }
+        }
+    }
